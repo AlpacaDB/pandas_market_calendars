@@ -128,6 +128,15 @@ USIndependenceDayBefore1954 = Holiday(
     end_date=Timestamp('1953-12-31'),
     observance=sunday_to_monday,
 )
+#######################################
+# US Juneteenth (June 19th)
+#######################################
+USJuneteenthAfter2022 = Holiday(
+    'Juneteenth Starting at 2022',
+    start_date=Timestamp('2022-06-19'),
+    month=6, day=19,
+    observance=nearest_workday,
+)
 USIndependenceDay = Holiday(
     'July 4th',
     month=7,
@@ -351,10 +360,3 @@ USNationalDaysofMourning = [
     Timestamp('2007-01-02', tz='UTC'),
     Timestamp('2018-12-05', tz='UTC'),
 ]
-
-USJuneteenthAfter2022 = Holiday(
-    'Juneteenth Starting at 2022',
-    start_date=Timestamp('2022-06-19'),
-    month=6, day=19,
-    observance=nearest_workday,
-)

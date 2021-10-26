@@ -29,15 +29,14 @@ from pandas_market_calendars.holidays_us import (August45VictoryOverJapan, Chris
                                                  November29BacklogRelief, PaperworkCrisis68, September11Closings,
                                                  USBlackFridayBefore1993, USBlackFridayInOrAfter1993,
                                                  USColumbusDayBefore1954, USElectionDay1848to1967,
-                                                 USElectionDay1968to1980, USIndependenceDay,
+                                                 USElectionDay1968to1980, USJuneteenthAfter2022, USIndependenceDay,
                                                  USIndependenceDayBefore1954, USLincolnsBirthDayBefore1954,
                                                  USMartinLutherKingJrAfter1998, USMemorialDay, USMemorialDay1964to1969,
                                                  USMemorialDayBefore1964, USNationalDaysofMourning, USNewYearsDay,
                                                  USPresidentsDay, USThanksgivingDay, USThanksgivingDay1939to1941,
                                                  USThanksgivingDayBefore1939, USVeteransDay1934to1953,
                                                  USWashingtonsBirthDay1964to1970, USWashingtonsBirthDayBefore1964,
-                                                 WeatherSnowClosing, WednesdayBeforeIndependenceDayPost2013,
-                                                 USJuneteenthAfter2022)
+                                                 WeatherSnowClosing, WednesdayBeforeIndependenceDayPost2013)
 from .market_calendar import MarketCalendar
 
 # Useful resources for making changes to this file:
