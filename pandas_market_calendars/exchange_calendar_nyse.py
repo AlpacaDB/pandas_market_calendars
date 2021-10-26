@@ -36,7 +36,8 @@ from pandas_market_calendars.holidays_us import (August45VictoryOverJapan, Chris
                                                  USPresidentsDay, USThanksgivingDay, USThanksgivingDay1939to1941,
                                                  USThanksgivingDayBefore1939, USVeteransDay1934to1953,
                                                  USWashingtonsBirthDay1964to1970, USWashingtonsBirthDayBefore1964,
-                                                 WeatherSnowClosing, WednesdayBeforeIndependenceDayPost2013)
+                                                 WeatherSnowClosing, WednesdayBeforeIndependenceDayPost2013,
+                                                 USJuneteenthAfter2022)
 from .market_calendar import MarketCalendar
 
 # Useful resources for making changes to this file:
@@ -174,6 +175,7 @@ class NYSEExchangeCalendar(MarketCalendar):
             USColumbusDayBefore1954,
             ChristmasBefore1954,
             Christmas,
+            USJuneteenthAfter2022,
         ])
 
     @property

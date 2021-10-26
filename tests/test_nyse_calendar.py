@@ -280,3 +280,16 @@ def test_special_early_close_is_not_trading_day():
     dates = [pd.Timestamp('1956-12-' + x) for x in ['20', '21', '26', '27', '28']]
     expected = pd.DatetimeIndex(dates)
     assert_index_equal(actual.index, expected)
+
+
+def test_juneteenth():
+    nyse = NYSEExchangeCalendar()
+    good_dates = nyse.valid_days('2020-01-01', '2023-12-31')
+    # test <2021 no holiday
+    assert pd.Timestamp("6/19/2020", tz="UTC") in good_dates
+    assert pd.Timestamp("6/18/2021", tz="UTC") in good_dates
+    assert pd.Timestamp("6/21/2021", tz="UTC") in good_dates
+
+    # test 2022-2023
+    assert pd.Timestamp("6/20/2022", tz="UTC") not in good_dates
+    assert pd.Timestamp("6/19/2023", tz="UTC") not in good_dates
